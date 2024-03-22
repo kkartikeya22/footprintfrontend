@@ -101,7 +101,7 @@ function CarbonFootprintCalculator() {
 
     try {
       // Make an HTTP POST request to save the form data to the database
-      const response = await axios.post('http://localhost:5000/api/saveFormData', formData);// Log the response from the server
+      const response = await axios.post('https://footprintbackend.onrender.com/api/saveFormData', formData);// Log the response from the server
       // Optionally, you can display a success message to the user
     } catch (error) {
       console.error('Error:', error.message); // Log any errors
